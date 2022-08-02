@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6302-exercise-3</title>
-    <!-- Stylesheet -->
+    <!-- Adobe Font link -->
+    <link rel="stylesheet" href="https://use.typekit.net/mft0mzc.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Job Listing Job</h1>
+    <h1>Job Listing</h1>
     <div class="timeDate" id="timeDate"></div>
     <form class="form" id="form" action="#" method="post">
         <div class="form-group">
             <label for="fullname">Full Name</label>
-            <input type="text" name="fullname" id="fullName">
+            <input type="text" name="fullname" id="fullName" autocomplete="off">
         </div>
         <div class="form-group">
             <label>Current Employment Status</label>
@@ -28,7 +30,7 @@
         </div>
         <div class="form-group">
             <label>What are your qualifications?</label>
-            <textarea id="qual" name="textBox" cols="30" rows="5" required></textarea>
+            <textarea id="qual" name="textBox" cols="30" rows="15" style="resize: none;" required></textarea>
         </div>
         <div class="form-group">
             <label for="terms"> Accept the Terms and Conditions</label>
@@ -36,9 +38,9 @@
         </div>
         <div class="form-group btns">
             <input id="btnSubmit" type="submit" value="Submit">
+            <button id="btnSave" value="Save">Save</button>
         </div>
     </form>
-    <button id="btnSave" value="Save">Save</button>
 
     <!-- Script -->
     <script src="js/script.js"></script>
